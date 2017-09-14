@@ -5,17 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Activity1 extends AppCompatActivity {
+public class Activity4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_1);
+        setContentView(R.layout.activity_4);
     }
 
-    public void goToSecond(View view) {
-        Intent intent = new Intent(this, Activity4.class);
+    public void goToThird(View view) {
+        Intent intent = new Intent(this, Activity2.class);
         startActivity(intent);
+        finish();
     }
 }
-

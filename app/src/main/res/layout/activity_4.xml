@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+
+    tools:context="com.example.menno_000.mennolont_pset2.Activity4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="Choose your story!"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/x1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Simple story"
+            android:onClick="" />
+
+        <Button
+            android:id="@+id/x2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Tarzan story"
+            android:onClick="" />
+
+        <Button
+            android:id="@+id/x3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="University story"
+            android:onClick="" />
+
+        <Button
+            android:id="@+id/x4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text="Clothes story"
+            android:onClick="" />
+
+        <Button
+            android:id="@+id/x5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="Dance story"
+            android:onClick="" />
+
+        <Button
+            android:id="@+id/x6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:text="Random story"
+            android:onClick="" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom" >
+
+        <Button
+            android:id="@+id/getstarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's go!"
+            android:onClick="goToThird" />
+    </RelativeLayout>
+
+</LinearLayout>
