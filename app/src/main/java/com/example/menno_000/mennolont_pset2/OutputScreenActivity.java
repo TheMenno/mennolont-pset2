@@ -6,22 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Activity3 extends AppCompatActivity {
+public class OutputScreenActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_3);
+        setContentView(R.layout.outputScreen);
 
         Intent intent = getIntent();
-        String receivedText1 = intent.getStringExtra("text1");
+        String receivedStory = intent.getStringExtra("outputStory");
 
-        TextView textView = (TextView) findViewById(R.id.editText1);
-        textView.setText(receivedText1);
+        TextView textView = (TextView) findViewById(R.id.output);
+        textView.setText(receivedStory);
     }
 
     public void goToFirst(View view) {
-        Intent intent = new Intent(this, Activity1.class);
+        Intent intent = new Intent(this, StartScreenActivity.class);
         startActivity(intent);
         finish();
     }

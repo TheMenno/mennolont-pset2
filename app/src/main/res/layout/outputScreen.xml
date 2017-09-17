@@ -11,7 +11,7 @@
     android:orientation="vertical"
     android:layout_margin="15dp"
 
-    tools:context="com.example.menno_000.mennolont_pset2.Activity3">
+    tools:context="com.example.menno_000.mennolont_pset2.OutputScreenActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/editText1"
+        android:id="@+id/output"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
