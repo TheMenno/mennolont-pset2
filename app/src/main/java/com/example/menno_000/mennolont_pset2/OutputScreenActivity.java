@@ -13,10 +13,10 @@ public class OutputScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.outputScreen);
+        setContentView(R.layout.outputscreen);
 
         Intent intent = getIntent();
-        String receivedStory = intent.getStringExtra("outputStory");
+        String receivedStory = (String) intent.getSerializableExtra("outputStory");
 
         TextView textView = (TextView) findViewById(R.id.output);
         textView.setText(receivedStory);

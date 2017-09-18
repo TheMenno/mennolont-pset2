@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+
+    tools:context="com.example.menno_000.mennolont_pset2.StartScreenActivity" >
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/madlibs"
+            android:id="@+id/madlibs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome to Mad Libs!"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="I will ask you to fill in words to complete a story. You won't be able to see the whole story until you are done filling in all the missing words. That's part of the fun!" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:text="Click below to get started ..." />
+
+        <Button
+            android:id="@+id/getstarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET STARTED!"
+            android:onClick="goToSecond"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="90dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
