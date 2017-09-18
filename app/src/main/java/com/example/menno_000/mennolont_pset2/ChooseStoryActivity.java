@@ -15,7 +15,6 @@ public class ChooseStoryActivity extends AppCompatActivity {
 
     Story story;
     String source;
-    String storySource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
